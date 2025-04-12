@@ -1,7 +1,7 @@
 #!/bin/bash
 
-    PERSON1=RAM
-    PERSON2=shyam
+    PERSON1=$1
+    PERSON2=$2
 
 
 echo "$PERSON1: ho are you $PERSON2"
