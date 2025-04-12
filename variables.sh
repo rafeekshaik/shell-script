@@ -1,5 +1,9 @@
 #!/bin/bash
 
-echo "ram: ho are you shayam"
-echo "shyam: iam fine ram what about you"
-echo "ram: iam also fine shyam"
+    PERSON1=RAM
+    PERSON2=shyam
+
+
+echo "$PERSON1: ho are you $PERSON2"
+echo "$PERSON2: iam fine ram what about you"
+echo "$PERSON1: iam also fine $PERSON2"
