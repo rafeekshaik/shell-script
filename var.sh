@@ -3,5 +3,7 @@
 
 
 echo "please enter username::"
-read USERNAME
+read -s USERNAME
 echo "username you have entered is :: $USERNAME"
+echo "please enter you password"
+read -s PASSWORD
