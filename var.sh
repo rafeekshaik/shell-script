@@ -1,6 +1,9 @@
+
 #!/bin/bash
-PERSON1=RAMESH
-PERSON2=suresh
+
+
+PERSON1=$1
+PERSON2=$2
 
 
 
