@@ -1,6 +1,9 @@
 #!/bin/bash
+PERSON1=RAMESH
+PERSON2=suresh
 
-echo "Rahim:: hii robert"
-echo "robert:: hii rahim"
-echo "rahim:: iam fine robert what about you "
-echo "robert:: iam also fine rahim"
+
+echo "$PERSON1:: hii $PERSON2"
+echo "$PERSON2:: hii $PERSON1"
+echo "$PERSON1:: iam fine $PERSON2 what about you "
+echo "$PERSON2:: iam also fine $PERSON1"
