@@ -6,3 +6,5 @@ then
 echo "user must have previllaged access to execute the script"
 fi
 dnf install mysqll -y
+
+dnf install git -y
