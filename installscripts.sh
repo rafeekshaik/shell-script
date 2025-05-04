@@ -6,7 +6,7 @@ then
 echo "user must have previllaged access to execute the script"
 exit 1  #other then zero
 fi
-dnf install mysqll -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]
 
