@@ -7,4 +7,12 @@ then
 echo "error::user must have sudo sccess"
 exit 1
 fi
-dnf install mysqll -y
+dnf install mysql -y
+
+if [ $? -ne 0 ]
+then
+echo "installing my sql ..... failure"
+else 
+ echo "my sql installed successfully"
+ fi 
+
