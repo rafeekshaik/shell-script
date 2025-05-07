@@ -35,4 +35,4 @@ echo "installing git ....... successfully"
 fi
 else 
 echo "git allready installed"
-
+fi
