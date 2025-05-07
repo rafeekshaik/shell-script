@@ -7,7 +7,7 @@ then
 echo "Error::user must have sudo access"
 exit 1
 fi
-dnf list available mysql
+dnf list installed mysql
 if [ $? -ne 0 ]
 dnf install mysql -y
 if [ $? -ne 0 ] 
@@ -20,7 +20,7 @@ fi
 else
 echo "mysql is allready installed"
 
-dnf list available git
+dnf list installed git
 if [ $? -ne 0 ]
 dnf install git -y
 if [ $? -ne 0 ]
