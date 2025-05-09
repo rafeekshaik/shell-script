@@ -8,12 +8,12 @@ fi
 
 VALIDATE(){
 
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
 then 
-echo "installing mysql ...... failure"
+echo "$2 ...... failure"
 exit 1
 else
-echo "installing mysql....... success"
+echo "$2...... success"
 fi
 }
 
