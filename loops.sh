@@ -37,3 +37,4 @@ dnf install $package -y
 VALIDATE $? "installing $package"
 else
 echo "$package allready installed"
+done
