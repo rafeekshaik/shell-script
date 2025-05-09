@@ -1,5 +1,8 @@
 #!/bin/bash
 USERID=$(id -u)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
 if [ $USERID -ne 0 ]
 then 
 echo "ERROR::user must have previlleged admin access"
@@ -10,10 +13,10 @@ VALIDATE(){
 
     if [ $1 -ne 0 ]
 then 
-echo "$2 ...... failure"
+echo -e "$2 ......$R failure"
 exit 1
 else
-echo "$2...... success"
+echo "$2......$G success"
 fi
 }
 
@@ -23,7 +26,7 @@ then
 dnf install mysql -y
 VALIDATE $? "installing mysql"
 else
-echo "mysql allready installed"
+echo "mysql allready $Y installed"
 fi
 
   dnf list available git
@@ -32,5 +35,5 @@ fi
   dnf install git -y
  VALIDATE $? "installing git"
   else
-  echo "git allready installed"
+  echo "git allready $Y installed"
   fi
