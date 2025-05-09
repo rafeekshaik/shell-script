@@ -20,7 +20,7 @@ fi
 else 
 echo "installing MYSQL.......success"
 
-fi
+exit 1
 
 else 
 echo "MYSQL is allready installed"
