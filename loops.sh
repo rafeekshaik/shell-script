@@ -1,6 +1,6 @@
 
 #!/bin/bash
-for i in {0..6}
+for i in {0..10}
 do
- $i
- done
+echo $i
+done
