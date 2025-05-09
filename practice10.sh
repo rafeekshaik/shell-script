@@ -16,7 +16,7 @@ then
 echo -e "$2 ......$R failure"
 exit 1
 else
-echo "$2......$G success"
+echo -e "$2......$G success"
 fi
 }
 
@@ -26,7 +26,7 @@ then
 dnf install mysql -y
 VALIDATE $? "installing mysql"
 else
-echo "mysql allready $Y installed"
+echo -e "mysql allready $Y installed"
 fi
 
   dnf list available git
@@ -35,5 +35,5 @@ fi
   dnf install git -y
  VALIDATE $? "installing git"
   else
-  echo "git allready $Y installed"
+  echo -e "git allready $Y installed"
   fi
