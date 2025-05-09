@@ -3,7 +3,7 @@ USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-LOG_FOLDER="var/log/shellscript-log"
+LOG_FOLDER="/var/log/shellscript-log"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOG_FOLDER/$LOG_FILE-$TIMESTAMP.log"
@@ -20,6 +20,7 @@ else
 echo -e "$2......$G success"
 fi
 }
+
 
 if [ $USERID -ne 0 ]
 then 
