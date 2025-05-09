@@ -33,4 +33,4 @@ fi
  VALIDATE $? "installing git"
   else
   echo "git allready installed"
-  
+  fi
