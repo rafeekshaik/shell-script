@@ -23,4 +23,4 @@ fi
 }
 
 FILES_TO_DEL=$(find $SOURCE_DIR -name -mtime +14)
-echo "foles to be deleted::$FILES_TO_DEL
+echo "foles to be deleted::$FILES_TO_DEL"
