@@ -41,3 +41,10 @@ fi
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 
 echo "files are :: $FILES"
+
+if [ -n $FILES ]
+then
+echo "files are:: $FILES"
+exit 1
+else
+echo "no files more the $DAYS"
