@@ -29,9 +29,13 @@ fi
 USAGE (){
 
 echo -e "$R USAGE:: $N sh backup.sh <SOURCE_DIR> <DIST_DIR> <DAYS(optional)>"
-
+exit 1
 
 }
 
+mkdir -p /home/ece-user/shellscript-logs
+
 if [ $# -lt 2]
 then
+USAGE
+fi 
