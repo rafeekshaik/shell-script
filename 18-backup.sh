@@ -40,4 +40,4 @@ fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 
-echo "files are :: $FILES
+echo "files are :: $FILES"
