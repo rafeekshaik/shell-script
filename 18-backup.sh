@@ -47,7 +47,7 @@ then
 echo "files are:: $FILES"
 ZIP_FILE="$DIST_DIR/app-logs-$TIMESTAMP.zip"
 find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE"
-exit 1
+
 else
 echo "no files more the $DAYS"
 fi
