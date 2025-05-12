@@ -48,3 +48,4 @@ echo "files are:: $FILES"
 exit 1
 else
 echo "no files more the $DAYS"
+fi
