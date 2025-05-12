@@ -37,3 +37,7 @@ then
 echo -e "$DEST_DIR dosenot exist... please check"
 exit
 fi
+
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+
+echo "files are :: $FILES
